@@ -113,7 +113,7 @@ tabControl.add(fPlan, text="Fligt Plan")
 tabControl.pack(expand=True,fill=BOTH)
 
 #Action
-a1 = Canvas(action,width=370,height=230)
+#a1 = Canvas(action,width=370,height=230)
 #a1.create_rectangle(0,0,100,100,fill='red')
 
 #-version_connect-
@@ -166,8 +166,79 @@ actionMenu.place(x=5,y=150)
 actionbtn = Button(action,text="Do Action",width=12)
 actionbtn.place(x=180,y=150)
 
-a1.pack()
-#ttk.Label(a1)
+#a1.pack()
+
+#Status
+#Altitude (m)
+altitude = Label(status,text="Altitude",font="Calibri 15")
+altitude_stat = Label(status,text="12",font="Calibri 18")
+#Pitch (deg)
+pitch = Label(status,text="Pitch",font="Calibri 15")
+pitch_stat = Label(status,text="12",font="Calibri 18")
+#Yaw (deg)
+yaw = Label(status,text="Yaw",font="Calibri 15")
+yaw_stat = Label(status,text="12",font="Calibri 18")
+#Roll (deg)
+roll = Label(status,text="Roll",font="Calibri 15")
+roll_stat = Label(status,text="12",font="Calibri 18")
+#GroundSpeed (m/s)
+gspeed = Label(status,text="Ground Speed",font="Calibri 15")
+gspeed_stat = Label(status,text="12",font="Calibri 18")
+#Dist to WP (m)
+dwp = Label(status,text="Dist to WP",font="Calibri 15")
+dwp_stat = Label(status,text="12",font="Calibri 18")
+#VertivcalSpeed (m/s)
+vspeed = Label(status,text="Vertical Speed",font="Calibri 15")
+vspeed_stat = Label(status,text="12",font="Calibri 18")
+#Dist Traveled (m)
+dtrav = Label(status,text="Dist Traveled",font="Calibri 15")
+dtrav_stat = Label(status,text="12",font="Calibri 18")
+#Home Coordinate (lat,lon)
+home = Label(status,text="Home Coordinate",font="Calibri 15")
+hlat_stat = Label(status,text="12",font="Calibri 18")
+hlon_stat = Label(status,text="12",font="Calibri 18")
+
+
+#alt
+altitude.place(x=44,y=5)
+altitude_stat.place(x=54, y=20)
+#pitch
+pitch.place(x=231,y=5)
+pitch_stat.place(x=241, y=20)
+#yaw
+yaw.place(x=44,y=40)
+yaw_stat.place(x=54,y=55)
+#roll
+roll.place(x=231,y=40)
+roll_stat.place(x=241, y=55)
+#gspeed
+gspeed.place(x=44,y=75)
+gspeed_stat.place(x=54,y=90)
+#vspeed
+vspeed.place(x=231,y=75)
+vspeed_stat.place(x=241, y=90)
+#dwp
+dwp.place(x=44,y=110)
+dwp_stat.place(x=54,y=125)
+#dtrav
+dtrav.place(x=231,y=110)
+dtrav_stat.place(x=241, y=125)
+#home
+home.place(x=124,y=145)
+hlat_stat.place(x=134,y=160)
+hlon_stat.place(x=174,y=160)
+
+
+#FlightVisual
+#Yaw (deg)
+#Pitch (deg)
+#Roll(deg)
+#Altitude (m)
+#Battery (%)
+#Hartbeat
+
+
+
 tabControl.pack()
 
 
